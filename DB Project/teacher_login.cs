@@ -3,33 +3,37 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Oracle.ManagedDataAccess.Client;
+using System.IO;
 
 namespace DB_Project
 {
-    public partial class student_login : UserControl
+    public partial class teacher_login : UserControl
     {
+
 
         OracleConnection con = new OracleConnection(@"DATA SOURCE = localhost:1521/xe; USER ID=ROHIT1;PASSWORD=rohit");
 
-        public student_login()
+        private teacher_classes teacherClassesControl;
+        int tid;
+        public teacher_login()
         {
             InitializeComponent();
         }
-
-        private void button4_Click(object sender, EventArgs e)
+        public void SetTeacherClassesControl(teacher_classes control)
+        {
+            teacherClassesControl = control;
+        }
+        private void button2_Click(object sender, EventArgs e)
         {
 
-
-
-
-
+              
+           
             if (id_box.Text == "")
             {
 
@@ -38,11 +42,11 @@ namespace DB_Project
                 return;
             }
 
-            int sid = Convert.ToInt32(id_box.Text);
+            tid = Convert.ToInt32(id_box.Text);
+        
 
-
-            StreamWriter sw = new StreamWriter("D://stud.txt");
-            sw.WriteLine(sid);
+            StreamWriter sw = new StreamWriter("D://ok.txt");
+            sw.WriteLine(tid);
 
             sw.Flush();
 
@@ -50,19 +54,16 @@ namespace DB_Project
 
 
             //  tc.teacherId = tid;
-            Form4 form = new Form4();
+            Form3 form = new Form3();
             form.ShowDialog();
 
-
-
         }
+        public int get_tid() {
 
-        private void student_login_Load(object sender, EventArgs e)
+            return tid; 
+        }
+        private void teacher_login_Load(object sender, EventArgs e)
         {
-
-
-
-
 
 
             con.Open();
@@ -83,7 +84,6 @@ namespace DB_Project
             reader.Close();
 
             con.Close();
-
 
         }
     }

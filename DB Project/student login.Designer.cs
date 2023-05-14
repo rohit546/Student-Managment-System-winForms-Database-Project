@@ -30,8 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.first_name_t_box = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.id_box = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -57,16 +57,7 @@
             this.button4.TabIndex = 10;
             this.button4.Text = "Login";
             this.button4.UseVisualStyleBackColor = false;
-            // 
-            // first_name_t_box
-            // 
-            this.first_name_t_box.BackColor = System.Drawing.Color.CadetBlue;
-            this.first_name_t_box.Font = new System.Drawing.Font("Segoe UI Emoji", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.first_name_t_box.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(53)))), ((int)(((byte)(57)))));
-            this.first_name_t_box.Location = new System.Drawing.Point(192, 257);
-            this.first_name_t_box.Name = "first_name_t_box";
-            this.first_name_t_box.Size = new System.Drawing.Size(342, 55);
-            this.first_name_t_box.TabIndex = 8;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label5
             // 
@@ -79,17 +70,31 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "Welcome Student";
             // 
+            // id_box
+            // 
+            this.id_box.BackColor = System.Drawing.Color.CadetBlue;
+            this.id_box.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_box.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.id_box.FormattingEnabled = true;
+            this.id_box.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.id_box.Location = new System.Drawing.Point(183, 246);
+            this.id_box.MaxDropDownItems = 100;
+            this.id_box.Name = "id_box";
+            this.id_box.Size = new System.Drawing.Size(342, 40);
+            this.id_box.TabIndex = 44;
+            // 
             // student_login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(55)))));
+            this.Controls.Add(this.id_box);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.first_name_t_box);
             this.Controls.Add(this.label5);
             this.Name = "student_login";
             this.Size = new System.Drawing.Size(758, 622);
+            this.Load += new System.EventHandler(this.student_login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -99,7 +104,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button4;
-        protected internal System.Windows.Forms.TextBox first_name_t_box;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox id_box;
     }
 }

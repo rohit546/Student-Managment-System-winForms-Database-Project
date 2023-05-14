@@ -27,15 +27,15 @@ namespace DB_Project
 
 
 
-            if (first_name_t_box.Text == ""  || last_name.Text=="" || student_gender_comboBox2.Text=="" )
+            if (first_name_t_box.Text == "" || last_name.Text == "" || student_gender_comboBox2.Text == "")
             {
 
                 MessageBox.Show("Dont insert empty record.");
                 return;
             }
 
-                con.Open();
-       //------------------------------------------------------------------------------------------------------------
+            con.Open();
+            //------------------------------------------------------------------------------------------------------------
 
             //this code is for id generation for student 
 
@@ -62,7 +62,7 @@ namespace DB_Project
             OracleCommand command1 = new OracleCommand(query, con);
 
             command1.Parameters.Add(":SID", OracleDbType.Int32).Value = id;
-            command1.Parameters.Add(":FIRST_NAME", OracleDbType.Varchar2).Value =first_name_t_box.Text; 
+            command1.Parameters.Add(":FIRST_NAME", OracleDbType.Varchar2).Value = first_name_t_box.Text;
             command1.Parameters.Add(":LAST_NAME", OracleDbType.Varchar2).Value = last_name.Text;
             command1.Parameters.Add(":REGISTRATION_DATE", OracleDbType.Date).Value = Convert.ToDateTime(dateTimePicker1.Text);
             command1.Parameters.Add(":GENDER", OracleDbType.Varchar2).Value = student_gender_comboBox2.Text;
@@ -72,8 +72,8 @@ namespace DB_Project
             command1.Parameters.Add(":FEES_PAID_STATUS", OracleDbType.Varchar2).Value = comboBox4.Text;
 
 
-         
-           
+
+
             int rowsInserted = command1.ExecuteNonQuery();
 
 
@@ -100,14 +100,14 @@ namespace DB_Project
             student_gender_comboBox2.Text = "";
             contact_textBox.Clear();
             student_b_group_comboBox.Text = "";
-            adress_textBox.Clear() ;
+            adress_textBox.Clear();
             comboBox4.Text = "";
 
 
 
-            con.Close();    
-            
-           
+            con.Close();
+
+
 
 
         }

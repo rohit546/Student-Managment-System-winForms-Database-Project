@@ -15,6 +15,8 @@ namespace DB_Project
         
         
         Admin_login_control admin= new Admin_login_control();
+        teacher_login teacher_Login= new teacher_login(); 
+        student_login student_Login= new student_login();       
         public choose_role()
         {
             InitializeComponent();
@@ -26,6 +28,35 @@ namespace DB_Project
             panel1.Controls.Clear();
             panel1.Controls.Add(admin);
             admin.Dock= DockStyle.Fill;             
+
+
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+
+
+
+            panel1.Controls.Clear();
+            panel1.Controls.Add(teacher_Login);
+            teacher_Login.Dock = DockStyle.Fill;
+
+
+
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+
+            panel1.Controls.Clear();
+            panel1.Controls.Add (student_Login);
+            student_Login.Dock = DockStyle.Fill;
+
+
 
 
 

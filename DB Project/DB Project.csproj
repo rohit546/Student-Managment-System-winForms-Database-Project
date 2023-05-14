@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add Class.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Add Class.Designer.cs">
+      <DependentUpon>Add Class.cs</DependentUpon>
+    </Compile>
     <Compile Include="Add student.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -61,11 +67,59 @@
     <Compile Include="Admin login control.Designer.cs">
       <DependentUpon>Admin login control.cs</DependentUpon>
     </Compile>
+    <Compile Include="Attendance Report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Attendance Report.Designer.cs">
+      <DependentUpon>Attendance Report.cs</DependentUpon>
+    </Compile>
     <Compile Include="choose role.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="choose role.Designer.cs">
       <DependentUpon>choose role.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes.Designer.cs">
+      <DependentUpon>Classes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="classes_for_studenr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="classes_for_studenr.Designer.cs">
+      <DependentUpon>classes_for_studenr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet6.xsd</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -78,6 +132,24 @@
     </Compile>
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manage_attendance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="manage_attendance.Designer.cs">
+      <DependentUpon>manage_attendance.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -99,6 +171,12 @@
     <Compile Include="Students.Designer.cs">
       <DependentUpon>Students.cs</DependentUpon>
     </Compile>
+    <Compile Include="Student_for_teacher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Student_for_teacher.Designer.cs">
+      <DependentUpon>Student_for_teacher.cs</DependentUpon>
+    </Compile>
     <Compile Include="Teacherlogin.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -111,20 +189,53 @@
     <Compile Include="Teachers.Designer.cs">
       <DependentUpon>Teachers.cs</DependentUpon>
     </Compile>
+    <Compile Include="teacher_classes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="teacher_classes.Designer.cs">
+      <DependentUpon>teacher_classes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teacher_login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="teacher_login.Designer.cs">
+      <DependentUpon>teacher_login.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add Class.resx">
+      <DependentUpon>Add Class.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Add student.resx">
       <DependentUpon>Add student.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin login control.resx">
       <DependentUpon>Admin login control.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Attendance Report.resx">
+      <DependentUpon>Attendance Report.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="choose role.resx">
       <DependentUpon>choose role.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes.resx">
+      <DependentUpon>Classes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="classes_for_studenr.resx">
+      <DependentUpon>classes_for_studenr.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manage_attendance.resx">
+      <DependentUpon>manage_attendance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -144,12 +255,87 @@
     <EmbeddedResource Include="Students.resx">
       <DependentUpon>Students.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Student_for_teacher.resx">
+      <DependentUpon>Student_for_teacher.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Teacherlogin.resx">
       <DependentUpon>Teacherlogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Teachers.resx">
       <DependentUpon>Teachers.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="teacher_classes.resx">
+      <DependentUpon>teacher_classes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacher_login.resx">
+      <DependentUpon>teacher_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet3.xsc">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet3.xss">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet4.xsc">
+      <DependentUpon>DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet4.xss">
+      <DependentUpon>DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet5.xsc">
+      <DependentUpon>DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet5.xss">
+      <DependentUpon>DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet6.xsc">
+      <DependentUpon>DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet6.xss">
+      <DependentUpon>DataSet6.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -162,6 +348,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ok.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

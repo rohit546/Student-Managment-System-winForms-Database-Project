@@ -8,12 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.AxHost;
+using Oracle.ManagedDataAccess.Client;
 
 namespace DB_Project
 {
     public partial class Form2 : Form
     {
-        
+        OracleConnection con = new OracleConnection(@"DATA SOURCE = localhost:1521/xe; USER ID=ROHIT1;PASSWORD=rohit");
+
         public Form2()
         {
             InitializeComponent();
@@ -35,9 +37,11 @@ namespace DB_Project
         private void button1_Click(object sender, EventArgs e)
         {
 
+            Add_Class classs= new Add_Class();
 
-
-
+            panel1.Controls.Clear();
+            panel1.Controls.Add(classs);
+           classs.Dock = DockStyle.Fill;
 
 
 
@@ -76,10 +80,11 @@ namespace DB_Project
             panel1.Controls.Clear();   
             panel1.Controls.Add(stude);
             stude.Dock= DockStyle.Fill;
-
-
+            panel1.Show();
+          
 
         }
+       
 
         private void teacher_view_button_Click(object sender, EventArgs e)
         {
@@ -98,6 +103,14 @@ namespace DB_Project
 
         private void button2_Click(object sender, EventArgs e)
         {
+
+            Classes classes= new Classes(); 
+            panel1.Controls.Clear();    
+            panel1.Controls.Add(classes);
+            classes.Dock= DockStyle.Fill;
+
+
+
 
         }
     }
